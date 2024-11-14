@@ -1,11 +1,22 @@
 //  import React from 'react'
+
+import Contact from "./components/Contact"
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
+import Project from "./components/Project"
+import Tech from "./components/Tech"
+
  
  const App = () => {
    return (
-     <div>
-       <h1 className="text-4xl text-red-600 bg-slate-900">Hello World!</h1>
-       <p className="text-xl text-gray-600">This is a simple React application using Vite.</p>
-     </div>
+     <>
+
+     <Navbar/>
+     <Tech/>
+     <Project/>
+     <Hero/>
+     <Contact/>
+     </>
    )
  }
  
