@@ -3,7 +3,7 @@
 const Project = () => {
   return (
     <div>
-      project
+      project react
     </div>
   )
 }
