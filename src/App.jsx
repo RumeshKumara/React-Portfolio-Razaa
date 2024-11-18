@@ -11,11 +11,17 @@ import Tech from "./components/Tech"
    return (
      <>
 
-     <Navbar/>
-     <Tech/>
-     <Project/>
-     <Hero/>
-     <Contact/>
+      <main className="flex flex-col items-center px-4 md:px-8">
+
+        <Navbar/>
+        <Tech/>
+        <Project/>
+        <Hero/>
+        <Contact/>
+
+      </main>
+
+     
      </>
    )
  }
