@@ -1,7 +1,16 @@
 // import React from 'react'
+import { useState } from "react"
 import { BsGithub, BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs"
 
 const Navbar = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const menuOpen = ()=> {
+      setIsOpen(!isOpen);
+  
+  }
+
   return (
     <div className="fixed top-0 flex items-center justify-between w-full px-16 py-5 text-white border-b border-b-gray-700 bg-blue-950/30 backdrop-blur-md md:justify-evenly">
       <a href="#home" className="text-3xl font-semibold text-transparent transition-all duration-300 bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text opacity-80 hover:opacity-100">
@@ -40,6 +49,10 @@ const Navbar = () => {
           </li>
 
         </ul>
+
+        {isOpen ? (
+          <Bix></Bix>
+        )}
     </div>
   )
 }
