@@ -57,7 +57,7 @@ const Navbar = () => {
         )}
 
         {isOpen && (
-          <div className="fixed right-0 top-[84px] flex h-screen flex-col">
+          <div className="fixed right-0 top-[84px] flex h-screen flex-col items-start">
             
           </div>
         )}
