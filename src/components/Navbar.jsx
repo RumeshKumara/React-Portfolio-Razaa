@@ -51,13 +51,50 @@ const Navbar = () => {
         </ul>
 
         {isOpen ? (
+          // eslint-disable-next-line react/jsx-no-undef
           <BiX className="block text-4xl md:hidden" onClick={menuOpen}/>
         ) : (
+          // eslint-disable-next-line react/jsx-no-undef
           <BiMenu className="block text-4xl md:hidden" onClick={menuOpen}/>
         )}
 
         {isOpen && (
-          <div className="fixed right-0 top-[84px] flex h-screen flex-col items-start">
+          <div className={`fixed right-0 top-[84px] flex h-screen flex-col items-start
+          justify-start gap-10 border-1 border-gray-800 w-1/2 bg-black/90 p-12 ${isOpen ? "block" : "hidden"}`}>
+
+         <ul className="flex flex-col gap-8">
+            <a href="#home" className="transition-all duration-300 cursor-pointer opacity-70 hover:opacity-100">
+              <li>Home</li>
+            </a>
+
+            <a href="#tech" className="transition-all duration-300 cursor-pointer opacity-70 hover:opacity-100">
+              <li>Tech</li>
+            </a>
+
+            <a href="#projects" className="transition-all duration-300 cursor-pointer opacity-70 hover:opacity-100">
+              <li>Projects</li>
+            </a>
+
+            <a href="#contact" className="transition-all duration-300 cursor-pointer opacity-70 hover:opacity-100">
+              <li>Contact</li>
+            </a>
+         </ul>
+
+         <ul className="flex flex-wrap gap-5">
+          <li className="text-xl transition-all duration-300 cursor-pointer opacity-70 hover:text-red-500 hover:opacity-100">
+            <BsYoutube />
+          </li>
+          <li className="text-xl transition-all duration-300 cursor-pointer opacity-70 hover:text-blue-500 hover:opacity-100">
+            <BsLinkedin />
+          </li>
+          <li className="text-xl transition-all duration-300 cursor-pointer opacity-70 hover:text-gray-500 hover:opacity-100">
+            <BsTwitterX />
+          </li>
+          <li className="text-xl transition-all duration-300 cursor-pointer opacity-70 hover:text-purple-500 hover:opacity-100">
+            <BsGithub />
+          </li>
+
+        </ul>
             
           </div>
         )}
