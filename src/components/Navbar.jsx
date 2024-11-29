@@ -1,6 +1,7 @@
 // import React from 'react'
 import { useState } from "react"
 import { BsGithub, BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs"
+import {BiX, BiMenu} from "react-icons/bi"
 
 const Navbar = () => {
 
@@ -51,10 +52,8 @@ const Navbar = () => {
         </ul>
 
         {isOpen ? (
-          // eslint-disable-next-line react/jsx-no-undef
           <BiX className="block text-4xl md:hidden" onClick={menuOpen}/>
         ) : (
-          // eslint-disable-next-line react/jsx-no-undef
           <BiMenu className="block text-4xl md:hidden" onClick={menuOpen}/>
         )}
 
