@@ -3,4 +3,18 @@
 @tailwind utilities;
 * {
     font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(19, 18, 18);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(41, 20, 60);
+    border-radius: 10px;
 }
