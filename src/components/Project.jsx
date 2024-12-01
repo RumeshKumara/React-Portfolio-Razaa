@@ -4,6 +4,7 @@ import image2 from "/public/1.png";
 import image3 from "/public/1.png";
 import image4 from "/public/1.png";
 import image5 from "/public/1.png";
+// import PropTypes from "prop-types";
 
 const projectsData = [
   {
